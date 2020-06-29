@@ -1,10 +1,10 @@
 package org.hospitality.entity;
 
-public class stayInfo
+public class StayInfo
 {
      private String occupantNumber, occupantId, stayDuration, deliveries;
 
-    private stayInfo(stayInfo.Builder builder){
+    private StayInfo(StayInfo.Builder builder){
         this.occupantNumber = builder.occupantNumber;
         this.occupantId = builder.occupantId;
         this.stayDuration = builder.stayDuration;
@@ -43,32 +43,32 @@ public class stayInfo
     {
         private String occupantNumber, occupantId , stayDuration, deliveries ;
 
-        public stayInfo.Builder setOccupantNumber(String occupantNumber)
+        public StayInfo.Builder setOccupantNumber(String occupantNumber)
         {
             this.occupantNumber = occupantNumber;
             return this;
         }
 
-        public stayInfo.Builder setOccupantId(String occupantId)
+        public StayInfo.Builder setOccupantId(String occupantId)
         {
             this.occupantId = occupantId;
             return this;
         }
 
-        public stayInfo.Builder setStayDuration(String stayDuration)
+        public StayInfo.Builder setStayDuration(String stayDuration)
         {
             this.stayDuration = stayDuration;
             return this;
         }
 
-        public stayInfo.Builder setDeliveries(String deliveries)
+        public StayInfo.Builder setDeliveries(String deliveries)
         {
             this.deliveries = deliveries;
             return this;
         }
 
-        public stayInfo build(){
-            return new stayInfo(this);
+        public StayInfo build(){
+            return new StayInfo(this);
         }
 
     }
